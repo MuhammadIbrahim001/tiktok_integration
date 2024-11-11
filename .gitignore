@@ -1,0 +1,85 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.buildlog/
+.history
+.svn/
+migrate_working_dir/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# Visual Studio Code related
+.vscode/
+
+# Flutter/Dart/Pub related
+.dart_tool/
+.packages
+build/
+.pub-cache/
+.pub/
+**/doc/api/
+
+# Flutter dependencies
+.flutter-plugins
+.flutter-plugins-dependencies
+.package-config.json
+
+# Generated files
+Generated.xcconfig
+Flutter.podspec
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+android/.gradle/
+android/.idea/
+android/local.properties
+android/app/*.iml
+
+# iOS-related
+ios/Pods
+ios/Podfile.lock
+ios/Podfile
+ios/Runner.xcworkspace/
+ios/Flutter/Flutter.xcframework
+
+# macOS-related
+macos/Pods
+macos/Podfile.lock
+macos/Podfile
+macos/Runner.xcworkspace/
+macos/Flutter/ephemeral/
+
+# Web-related
+web/.dart_tool/
+web/.packages
+web/build/
+
+# Linux-related
+linux/flutter/generated_plugin_registrant.cc
+linux/flutter/CMakeFiles/
+
+# Windows-related
+windows/flutter/generated_plugin_registrant.cc
+windows/flutter/CMakeFiles/
+
+# Test results
+coverage/
+
+!/lib
+!/android
+!/assets
+!/ios
+!/linux
+!/macos
+!/windows
+!/test
+!/web
+!/.metadata
+!/pubspec.yaml
