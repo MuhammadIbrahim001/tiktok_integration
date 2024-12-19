@@ -1,11 +1,13 @@
 # TikTok Integration in Flutter
 
-This project demonstrates how to integrate TikTok SDK in a Flutter application using the `tiktok_integration` package. Below are the steps to set up, configure, and use this integration.
+This guide demonstrates how to integrate the TikTok SDK in a Flutter application using the `tiktok_integration` package. Below are the steps to set up, configure, and use this integration.
+
+---
 
 ## Prerequisites
 
-1. Flutter SDK installed on your system. [Install Flutter](https://docs.flutter.dev/get-started/install)
-2. A TikTok Developer Account to get your App ID and TikTok App ID. [TikTok Developers](https://developers.tiktok.com/)
+1. **Flutter SDK** installed on your system. [Install Flutter](https://docs.flutter.dev/get-started/install)
+2. A **TikTok Developer Account** to get your App ID and TikTok App ID. [TikTok Developers](https://developers.tiktok.com/)
 3. Basic knowledge of Flutter development.
 
 ---
@@ -13,7 +15,6 @@ This project demonstrates how to integrate TikTok SDK in a Flutter application u
 ## Steps to Set Up the Project
 
 ### 1. Add the TikTok Integration Package
-
 In your `pubspec.yaml` file, include the following dependency:
 
 ```yaml
@@ -22,20 +23,20 @@ dependencies:
     sdk: flutter
 
   # TikTok Integration from GitHub
-  t
+  tiktok_integration:
+    git:
+      url: https://github.com/MuhammadIbrahim001/tiktok_integration.git
+      ref: main
 ```
 
-\
-
-
 Run the command:
-
 ```bash
 flutter pub get
 ```
 
-### 2. Update `AndroidManifest.xml`
+---
 
+### 2. Update `AndroidManifest.xml`
 Add the following permission to your `AndroidManifest.xml` file:
 
 ```xml
@@ -59,8 +60,9 @@ Ensure that the file has the correct structure:
 </manifest>
 ```
 
-### 3. Update `settings.gradle`
+---
 
+### 3. Update `settings.gradle`
 Ensure that the JitPack repository is added in your `settings.gradle` file:
 
 ```gradle
@@ -92,8 +94,9 @@ plugins {
 include ":app"
 ```
 
-### 4. Update `build.gradle`
+---
 
+### 4. Update `build.gradle`
 Ensure the JitPack repository is also added in your `build.gradle` file:
 
 ```gradle
@@ -120,8 +123,9 @@ tasks.register("clean", Delete) {
 }
 ```
 
-### 5. Initialize the TikTok SDK
+---
 
+### 5. Initialize the TikTok SDK
 In your Flutter project, create a Dart file (`main.dart`) and use the following example code to integrate and initialize the TikTok SDK:
 
 ```dart
