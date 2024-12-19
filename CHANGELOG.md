@@ -11,3 +11,11 @@
 ## 0.0.3
 
 * Changes:  small fixes.
+
+## 0.0.4
+
+* Changes:  Updated Readme file.
+
+## 0.0.5
+
+* Changes:  small changes.

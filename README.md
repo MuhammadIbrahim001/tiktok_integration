@@ -42,64 +42,43 @@ Ensure that the file has the correct structure:
 ---
 
 ### 2. Update `settings.gradle`
-Ensure that the JitPack repository is added in your `settings.gradle` file:
+Add the following line to your `settings.gradle` file in the repositories section:
+
+```gradle
+maven { url 'https://www.jitpack.io' }
+```
+Example:
 
 ```gradle
 pluginManagement {
-    def flutterSdkPath = {
-        def properties = new Properties()
-        file("local.properties").withInputStream { properties.load(it) }
-        def flutterSdkPath = properties.getProperty("flutter.sdk")
-        assert flutterSdkPath != null, "flutter.sdk not set in local.properties"
-        return flutterSdkPath
-    }()
-
-    includeBuild("$flutterSdkPath/packages/flutter_tools/gradle")
-
     repositories {
-       
         google()
         mavenCentral()
-         maven { url 'www.https://jitpack.io' }  // Ensure JitPack is added here
+        maven { url 'https://www.jitpack.io' } // Add this line
     }
 }
 
-plugins {
-    id "dev.flutter.flutter-plugin-loader" version "1.0.0"
-    id "com.android.application" version "8.1.0" apply false
-    id "org.jetbrains.kotlin.android" version "1.8.22" apply false
-}
-
-include ":app"
 ```
 
 ---
 
 ### 3. Update `build.gradle`
-Ensure the JitPack repository is also added in your `build.gradle` file:
+Add the following line to your project-level `build.gradle` file in the repositories section:
+```gradle
+maven { url 'https://www.jitpack.io' }
+
+```
+Example:
 
 ```gradle
 allprojects {
     repositories {
         google()
         mavenCentral()
-        maven { url 'https://www.jitpack.io' }  // Ensure JitPack is added here
+        maven { url 'https://www.jitpack.io' } // Add this line
     }
 }
 
-rootProject.buildDir = "../build"
-
-subprojects {
-    project.buildDir = "${rootProject.buildDir}/${project.name}"
-}
-
-subprojects {
-    project.evaluationDependsOn(":app")
-}
-
-tasks.register("clean", Delete) {
-    delete rootProject.buildDir
-}
 ```
 
 ---
