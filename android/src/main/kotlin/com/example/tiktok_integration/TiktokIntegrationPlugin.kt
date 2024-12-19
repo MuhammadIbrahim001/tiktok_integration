@@ -1,4 +1,4 @@
-package com.example.tiktok_integration
+package com.ibrahim.tiktok_integration
 
 import android.content.Context
 import androidx.annotation.NonNull

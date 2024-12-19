@@ -1,11 +1,11 @@
 name: tiktok_integration
 description: "A new Flutter plugin project."
 version: 0.0.1
-homepage:
+homepage: https://github.com/MuhammadIbrahim001/tiktok_integration
 
 environment:
-  sdk: ^3.5.4
-  flutter: '>=3.3.0'
+  sdk: ">=3.5.4 <4.0.0"
+  flutter: ">=3.13.0"
 
 dependencies:
   flutter:
@@ -35,7 +35,7 @@ flutter:
   plugin:
     platforms:
       android:
-        package: com.example.tiktok_integration
+        package: com.ibrahim.tiktok_integration
         pluginClass: TiktokIntegrationPlugin
 
   # To add assets to your plugin package, add an assets section, like this:

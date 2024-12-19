@@ -1,8 +1,6 @@
 
 import 'package:flutter/services.dart';
 
-import 'tiktok_integration_platform_interface.dart';
-
 class TiktokIntegration {
   static const MethodChannel _channel = MethodChannel('tiktok_integration');
 

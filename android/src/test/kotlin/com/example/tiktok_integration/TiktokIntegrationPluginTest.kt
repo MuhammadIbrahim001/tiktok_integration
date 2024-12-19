@@ -1,4 +1,4 @@
-package com.example.tiktok_integration
+package com.ibrahim.tiktok_integration
 
 import io.flutter.plugin.common.MethodCall
 import io.flutter.plugin.common.MethodChannel

@@ -1,4 +1,4 @@
-group = "com.example.tiktok_integration"
+group = "com.ibrahim.tiktok_integration"
 version = "1.0-SNAPSHOT"
 
 buildscript {
@@ -33,7 +33,7 @@ apply plugin: "kotlin-android"
 
 android {
     if (project.android.hasProperty("namespace")) {
-        namespace = "com.example.tiktok_integration"
+        namespace = "com.ibrahim.tiktok_integration"
     }
 
     compileSdk = 34
