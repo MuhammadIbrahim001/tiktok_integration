@@ -10,10 +10,11 @@ pluginManagement {
     includeBuild("$flutterSdkPath/packages/flutter_tools/gradle")
 
     repositories {
-         maven { url 'https://jitpack.io' }  // Ensure JitPack is added here
+       
         google()
         mavenCentral()
         gradlePluginPortal()
+        maven { url 'https://www.jitpack.io' }  // Ensure JitPack is added here
        
     }
 }
