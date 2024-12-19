@@ -14,29 +14,8 @@ This guide demonstrates how to integrate the TikTok SDK in a Flutter application
 
 ## Steps to Set Up the Project
 
-### 1. Add the TikTok Integration Package
-In your `pubspec.yaml` file, include the following dependency:
 
-```yaml
-dependencies:
-  flutter:
-    sdk: flutter
-
-  # TikTok Integration from GitHub
-  tiktok_integration:
-    git:
-      url: https://github.com/MuhammadIbrahim001/tiktok_integration.git
-      ref: main
-```
-
-Run the command:
-```bash
-flutter pub get
-```
-
----
-
-### 2. Update `AndroidManifest.xml`
+### 1. Update `AndroidManifest.xml`
 Add the following permission to your `AndroidManifest.xml` file:
 
 ```xml
@@ -62,7 +41,7 @@ Ensure that the file has the correct structure:
 
 ---
 
-### 3. Update `settings.gradle`
+### 2. Update `settings.gradle`
 Ensure that the JitPack repository is added in your `settings.gradle` file:
 
 ```gradle
@@ -96,7 +75,7 @@ include ":app"
 
 ---
 
-### 4. Update `build.gradle`
+### 3. Update `build.gradle`
 Ensure the JitPack repository is also added in your `build.gradle` file:
 
 ```gradle
@@ -125,7 +104,7 @@ tasks.register("clean", Delete) {
 
 ---
 
-### 5. Initialize the TikTok SDK
+### 4. Initialize the TikTok SDK
 In your Flutter project, create a Dart file (`main.dart`) and use the following example code to integrate and initialize the TikTok SDK:
 
 ```dart
