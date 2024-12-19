@@ -78,10 +78,10 @@ pluginManagement {
     includeBuild("$flutterSdkPath/packages/flutter_tools/gradle")
 
     repositories {
-        maven { url 'https://jitpack.io' }  // Ensure JitPack is added here
+       
         google()
         mavenCentral()
-        gradlePluginPortal()
+         maven { url 'www.https://jitpack.io' }  // Ensure JitPack is added here
     }
 }
 
@@ -102,9 +102,9 @@ Ensure the JitPack repository is also added in your `build.gradle` file:
 ```gradle
 allprojects {
     repositories {
-        maven { url 'https://jitpack.io' }  // Ensure JitPack is added here
         google()
         mavenCentral()
+        maven { url 'https://www.jitpack.io' }  // Ensure JitPack is added here
     }
 }
 

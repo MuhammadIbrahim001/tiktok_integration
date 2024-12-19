@@ -4,7 +4,7 @@ version = "1.0-SNAPSHOT"
 buildscript {
     ext.kotlin_version = "1.8.22"
     repositories {
-          maven { url 'https://jitpack.io' }  // Ensure JitPack is added here
+        maven { url 'https://www.jitpack.io' }  // Ensure JitPack is added here
         google()
       jcenter()
         mavenCentral()
@@ -20,7 +20,7 @@ buildscript {
 
 allprojects {
     repositories {
-          maven { url 'https://jitpack.io' }  // Ensure JitPack is added here
+        maven { url 'https://www.jitpack.io' } // Ensure JitPack is added here
         google()
       jcenter()
         mavenCentral()
