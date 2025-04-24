@@ -18,4 +18,4 @@
 
 ## 0.0.5
 
-* Changes:  small changes.
+* Changes:  - Enhanced package description and metadata in `pubspec.yaml`.
