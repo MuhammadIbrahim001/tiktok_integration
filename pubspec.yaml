@@ -1,10 +1,13 @@
 name: tiktok_integration
-description: "A Flutter plugin to integrate TikTok SDK"
-version: 0.0.5
+description: >
+  A Flutter plugin that facilitates seamless integration with the TikTok SDK on Android platforms. 
+  It enables developers to initialize the TikTok SDK, track custom events, and interact with TikTok's features directly from Flutter applications.
+version: 0.0.6
 homepage: https://github.com/MuhammadIbrahim001/tiktok_integration
 
+
 environment:
-  sdk: ">=3.5.4 <4.0.0"
+  sdk: '>=3.1.3 <4.0.0'
   flutter: ">=3.13.0"
 
 dependencies:

@@ -7,13 +7,13 @@ import 'package:plugin_platform_interface/plugin_platform_interface.dart';
 class MockTiktokIntegrationPlatform
     with MockPlatformInterfaceMixin
     implements TiktokIntegrationPlatform {
-
   @override
   Future<String?> getPlatformVersion() => Future.value('42');
 }
 
 void main() {
-  final TiktokIntegrationPlatform initialPlatform = TiktokIntegrationPlatform.instance;
+  final TiktokIntegrationPlatform initialPlatform =
+      TiktokIntegrationPlatform.instance;
 
   test('$MethodChannelTiktokIntegration is the default instance', () {
     expect(initialPlatform, isInstanceOf<MethodChannelTiktokIntegration>());
@@ -21,7 +21,8 @@ void main() {
 
   test('getPlatformVersion', () async {
     TiktokIntegration tiktokIntegrationPlugin = TiktokIntegration();
-    MockTiktokIntegrationPlatform fakePlatform = MockTiktokIntegrationPlatform();
+    MockTiktokIntegrationPlatform fakePlatform =
+        MockTiktokIntegrationPlatform();
     TiktokIntegrationPlatform.instance = fakePlatform;
 
     // expect(await tiktokIntegrationPlugin.getPlatformVersion(), '42');

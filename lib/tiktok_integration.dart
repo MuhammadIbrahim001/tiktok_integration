@@ -1,11 +1,10 @@
-
 import 'package:flutter/services.dart';
 
 class TiktokIntegration {
   static const MethodChannel _channel = MethodChannel('tiktok_integration');
 
-   /// Initializes the TikTok SDK with the provided [appId] and [ttAppId].
-   static Future<void> initializeSdk(String appId, String ttAppId) async {
+  /// Initializes the TikTok SDK with the provided [appId] and [ttAppId].
+  static Future<void> initializeSdk(String appId, String ttAppId) async {
     try {
       await _channel.invokeMethod('initializeSdk', {
         'appId': appId,
@@ -16,7 +15,8 @@ class TiktokIntegration {
     }
   }
 
-  static Future<void> trackEvent(String eventName, {String? eventId, Map<String, dynamic>? eventParams}) async {
+  static Future<void> trackEvent(String eventName,
+      {String? eventId, Map<String, dynamic>? eventParams}) async {
     try {
       if (eventId != null) {
         await _channel.invokeMethod('trackEvent', {
